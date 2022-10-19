@@ -1,0 +1,171 @@
+* body{
+    font-family: Montserrat, Sans-serif; 
+    background: linear-gradient(84.58deg, #8C84F7 -31.8%, #B4C3F8 122.69%);
+}
+[class*="-container"]{
+    max-width: 1440px; 
+    margin: 0 auto;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+img{
+    width: 100%;
+}
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.logo__icon{
+    display: inline-block;
+    cursor: pointer;
+}
+.logo__icon:hover{
+    transform: scale(1.5);
+}
+.logo {
+    display: inline-block;
+}
+.title {
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    color: #574cf6;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+.section-wrapper {
+    display: flex;
+    position: relative;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.section-wrapper__box {
+    position: relative;
+    justify-content: end;
+    max-width: 606px;
+    padding-left: 20px;
+}
+.choise__bus{
+    display: inline-block;
+
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    z-index: 10;
+}
+.section-wrapper__list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.section-wrapper__list li:not(:last-child){
+    margin-bottom: 30px;
+    }
+
+.section-wrapper__item {
+    display: inline-block;
+    position: relative;
+    width: 370px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #4a4949;
+    padding: 8px;
+    border: 0.3px solid #6b6a6a;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.section-wrapper__item:active:hover{
+    color: rgb(9, 4, 73, 1);
+}
+.car-choise:hover + .car-choise__cash{
+    display: block;
+    visibility: visible;
+    left: 400px;
+    top: -10px;
+    width: 300px;
+    transition: all .5s ease;
+}
+.car-choise__cash{
+    display: inline-block;
+    position: absolute;
+    left: 500px;
+    visibility: hidden;
+}
+.car-choise__cash--bmv{
+    display: inline-block;
+    position: absolute;
+    left: 1000px;
+    top: -100px;
+    visibility: hidden;
+}
+.car-choise:hover + .car-choise__cash--bmv{
+    display: block;
+    visibility: visible;
+    left: 900px;
+    transition: all .5s ease;
+}
+.chench{
+    display: inline-block;
+    position: absolute;
+    width: 370px;
+    left: 200px;
+    padding-top: 24px;
+    visibility: hidden;  
+}
+.chench li{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #4a4949;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.lorem:hover + .chench li{
+    display: block;
+    visibility: visible;  
+    background: #6b6a64;
+    transition: all .5s ease;   
+}
+.footer{
+    position: relative; 
+    max-width: 1440px; 
+    margin: 0 auto;
+    top: 500px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background: #575756;
+}
+.bables{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 758px;
+    cursor: pointer;
+    transition: all .9s ease-in-out;
+}
+.bables:active +.bables-a{
+    visibility: visible;
+    transform: scale(2.5);
+    transition: all .9s ease-in-out; 
+}
+.bables-a{
+    position: absolute;
+    width: 130px;
+    height: 110px;
+    top: 400px;
+    left: 735px;
+    visibility: hidden;  
+}
+.bables-b{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 800px;
+}
